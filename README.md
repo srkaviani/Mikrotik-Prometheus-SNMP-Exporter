@@ -4,6 +4,9 @@ How To Monitor Mikrotik Devices (RouterOS) with Prometheus - SNMP Exporter and G
 Manual deploy
 1.add into prometheus.yml
 
+
+```
+
   - job_name: Mikrotik
     static_configs:
       - targets:
@@ -18,6 +21,10 @@ Manual deploy
         target_label: instance
       - target_label: __address__
         replacement: localhost:9116  # The SNMP exporter's real hostname:port.
+        
+```
+
+
 2.Configure Prometheus and run /snmp/snmp_exporter 
 
 3.Add dashboard https://grafana.com/grafana/dashboards/15454
