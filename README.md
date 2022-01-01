@@ -2,6 +2,7 @@
 How To Monitor Mikrotik Devices (RouterOS) with Prometheus - SNMP Exporter and Grafana
 
 Manual deploy
+
 1.add into prometheus.yml
 
 
